@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a6a2a2;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    background-color: #fff;
+
+}
+
+.container {
+    text-align: center;
+    background-image: url(/images/pattern-bg.png);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.header__title {
+    color: #fff;
+}
+
+.header__title_item {
+    margin-top: 0;
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+.header__input_item {
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+    width: 40%;
+    height: 50px;
+}
+
+.header__input_item:focus {
+    border: none;
+}
+
+.header__input_btn {
+    outline: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+    border: none;
+    position: relative;
+    top: 2.5px;
+    right: 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header__input_btn:hover {
+    background-color:  hsl(0, 0%, 17%);
+}
+
+.main {
+    height: 20%;
+}
+
+.main__content {
+    position: relative;
+    z-index: 101;
+    margin: 0 auto;
+    width: 85%;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    word-wrap: break-word;
+}
+
+.main__content_item {
+    width: 20%;
+}
+
+.main__content_name {
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+}
+
+.main__content_info {
+    color: hsl(0, 0%, 17%);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.content {
+    margin-top: -50px;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    margin-top: -60px;
+    position: relative;
+    z-index: 50;
+    height: 409px;
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .header__input_item {
+        width: 65%;
+    }
+
+    .main__content {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .main__content_item {
+        width: 80%;
+    }
+}
